@@ -7,7 +7,7 @@ to parse an object (like JSON or a CSV or just a string) and put it in a proper 
 2. Bad messages that don't parse
 
 A good way to fix both is to use Scala's Future and Either traits. The basic idea is you parse the
-record using a Future to keep the threads free and using Either to catch
+record using a Future to keep the threads free and then use Either to catch
 errors and still return something.
 
 Comments are in the code.
