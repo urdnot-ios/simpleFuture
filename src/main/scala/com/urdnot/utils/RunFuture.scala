@@ -12,6 +12,7 @@ object RunFuture extends App {
   /*
   The target case class of the structured data
    */
+
   case class structuredString(
                                firstWord: String,
                                secondWord: String,
