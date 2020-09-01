@@ -25,14 +25,14 @@ object RunFuture extends App {
   call the object methods with the data and print the reply.
   Because we're using Future the order of the prints is not guaranteed
    */
-  FutureForErrorChecking.parseStringFuture(dataString).onComplete {
+  FutureMethods.parseStringFuture(dataString).onComplete {
   case Success(x) => {
     println(s"Future: ${x}")
   }
   case Failure(e) => println("Failed to run the future: " + e.printStackTrace())
   }
 
-  FutureForErrorChecking.parseStringEither(dataString).onComplete {
+  FutureMethods.parseStringEither(dataString).onComplete {
     case Success(x) => x.map {
       case Right(valid) => println("valid entry " + valid)
       case Left(invalid) => println("invalid entry: " + invalid)

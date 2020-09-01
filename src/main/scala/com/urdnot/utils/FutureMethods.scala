@@ -4,7 +4,7 @@ import com.urdnot.utils.RunFuture.structuredString
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
 
-object FutureForErrorChecking {
+object FutureMethods {
   /*
   A simple Future: can you extract the data? There's no real error handling here, just
   a trim to remove unwanted spaces.
